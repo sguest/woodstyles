@@ -1,0 +1,12 @@
+modLoader="javafml"
+loaderVersion="[26,)"
+[[mods]]
+modId="woodstyles"
+version="1.0"
+displayName="Woodstyles"
+issueTrackerURL="https://github.com/sguest/woodstyles/issues"
+displayURL="https://github.com/sguest/woodstyles"
+authors="Aronsonn"
+description='''
+Adds alternative wood types for wood-based items
+'''
