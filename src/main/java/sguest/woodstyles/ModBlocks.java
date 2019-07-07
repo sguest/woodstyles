@@ -11,12 +11,14 @@ import net.minecraftforge.registries.ObjectHolder;
 @ObjectHolder(Woodstyles.MOD_ID)
 public class ModBlocks {
     public static final Block acacia_crafting_table = null;
+    public static final Block birch_crafting_table = null;
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event)
     {
         event.getRegistry().registerAll(
-            new CraftingTableBlock(Block.Properties.from(Blocks.CRAFTING_TABLE)).setRegistryName(Woodstyles.MOD_ID, "acacia_crafting_table")
+            new CraftingTableBlock(Block.Properties.from(Blocks.CRAFTING_TABLE)).setRegistryName(Woodstyles.MOD_ID, "acacia_crafting_table"),
+            new CraftingTableBlock(Block.Properties.from(Blocks.CRAFTING_TABLE)).setRegistryName(Woodstyles.MOD_ID, "birch_crafting_table")
         );
     }
 }
