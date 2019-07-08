@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "top": "minecraft:block/crafting_table_top",
+    "front": "woodstyles:block/crafting_table_front",
+    "side": "woodstyles:block/crafting_table_side"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "down":  { "texture": "#planks" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#planks" },
+        "south": { "texture": "#planks" },
+        "west":  { "texture": "#planks" },
+        "east":  { "texture": "#planks" }
+      }
+    },
+    {
+      "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "north": { "texture": "#front" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#front" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}

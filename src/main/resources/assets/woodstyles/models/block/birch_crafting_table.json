@@ -1,34 +1,7 @@
 {
-    "parent": "block/block",
+    "parent": "woodstyles:block/crafting_table",
     "textures": {
         "particle": "minecraft:block/birch_planks",
-        "planks": "minecraft:block/birch_planks",
-        "top": "minecraft:block/crafting_table_top",
-        "front": "woodstyles:block/crafting_table_front",
-        "side": "woodstyles:block/crafting_table_side"
-    },
-    "elements": [
-        {
-            "from": [0, 0, 0],
-            "to": [16, 16, 16],
-            "faces": {
-                "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#planks", "cullface": "down" },
-                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#top",    "cullface": "up" },
-                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#planks",   "cullface": "north" },
-                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#planks",   "cullface": "south" },
-                "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#planks",   "cullface": "west" },
-                "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#planks",   "cullface": "east" }
-            }
-        },
-        {
-            "from": [ 0, 0, 0 ],
-            "to": [ 16, 16, 16 ],
-            "faces": {
-                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#front", "cullface": "north" },
-                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#side", "cullface": "south" },
-                "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#front", "cullface": "west" },
-                "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#side", "cullface": "east" }
-            }
-        }
-    ]
+        "planks": "minecraft:block/birch_planks"
+    }
 }
