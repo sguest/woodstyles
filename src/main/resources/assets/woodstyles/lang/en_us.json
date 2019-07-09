@@ -6,5 +6,10 @@
   "block.woodstyles.acacia_crafting_table": "Acacia Crafting Table",
   "block.woodstyles.dark_oak_crafting_table": "Dark Oak Crafting Table",
 
-  "block.woodstyles.acacia_bookshelf": "Acacia Bookshelf"
+  "block.woodstyles.oak_bookshelf": "Oak Bookshelf",
+  "block.woodstyles.spruce_bookshelf": "Spruce Bookshelf",
+  "block.woodstyles.birch_bookshelf": "Birch Bookshelf",
+  "block.woodstyles.jungle_bookshelf": "Jungle Bookshelf",
+  "block.woodstyles.acacia_bookshelf": "Acacia Bookshelf",
+  "block.woodstyles.dark_oak_bookshelf": "Dark Oak Bookshelf"
 }
