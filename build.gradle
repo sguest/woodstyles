@@ -13,6 +13,8 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
+apply from: 'resources.gradle'
+
 version = '1.0'
 group = 'sguest.woodstyles'
 archivesBaseName = 'woodstyles'

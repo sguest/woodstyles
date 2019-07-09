@@ -1,0 +1,7 @@
+{
+    "parent": "woodstyles:block/base/bookshelf",
+    "textures": {
+        "particle": "minecraft:block/#WOOD#_planks",
+        "planks": "minecraft:block/#WOOD#_planks"
+    }
+}

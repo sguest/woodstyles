@@ -1,0 +1,13 @@
+task generateResources {
+  ['oak', 'spruce', 'birch', 'jungle', 'acacia', 'dark_oak'].each { woodType ->
+    copy {
+      from('src/resource-templates') {
+        include '**/*.json'
+        rename '#WOOD#', woodType
+        filter{ it.replaceAll('#WOOD#', woodType) }
+      }
+
+      into('src/main/resources')
+    }
+  }
+}
