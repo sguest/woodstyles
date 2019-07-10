@@ -8,6 +8,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(modid = Woodstyles.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModBlocks {
@@ -17,13 +18,17 @@ public class ModBlocks {
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event)
     {
-        for(WoodType type : WoodType.values())
+        registerBlockType(crafting_tables, () -> new CraftingTableBlock(Block.Properties.from(Blocks.CRAFTING_TABLE)), "crafting_table", event);
+        registerBlockType(bookshelves, () -> new BookshelfBlock(Block.Properties.from(Blocks.BOOKSHELF)), "bookshelf", event);
+    }
+
+    private static void registerBlockType(Map<WoodType, Block> map, Supplier<Block> blockGenerator, String baseName, RegistryEvent.Register<Block> event)
+    {
+        for(WoodType type: WoodType.values())
         {
-            crafting_tables.put(type, new CraftingTableBlock(Block.Properties.from(Blocks.CRAFTING_TABLE)).setRegistryName(Woodstyles.MOD_ID, type + "_crafting_table"));
-            bookshelves.put(type, new BookshelfBlock(Block.Properties.from(Blocks.BOOKSHELF)).setRegistryName(Woodstyles.MOD_ID, type + "_bookshelf"));
+            map.put(type, blockGenerator.get().setRegistryName(Woodstyles.MOD_ID, type + "_" + baseName));
         }
 
-        event.getRegistry().registerAll(crafting_tables.values().toArray(new Block[crafting_tables.size()]));
-        event.getRegistry().registerAll(bookshelves.values().toArray(new Block[bookshelves.size()]));
+        event.getRegistry().registerAll(map.values().toArray(new Block[map.size()]));
     }
 }
