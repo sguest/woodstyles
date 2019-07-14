@@ -1,6 +1,5 @@
-package sguest.woodstyles;
+package sguest.woodstyles.blocks;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.SimpleNamedContainerProvider;
@@ -10,6 +9,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
+import sguest.woodstyles.inventory.container.WorkbenchContainer;
 
 public class CraftingTableBlock extends net.minecraft.block.CraftingTableBlock {
     private static final ITextComponent title = new TranslationTextComponent("container.crafting", new Object[0]);

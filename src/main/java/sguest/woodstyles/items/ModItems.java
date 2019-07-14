@@ -1,4 +1,4 @@
-package sguest.woodstyles;
+package sguest.woodstyles.items;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -7,6 +7,9 @@ import net.minecraft.item.ItemGroup;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import sguest.woodstyles.blocks.ModBlocks;
+import sguest.woodstyles.WoodType;
+import sguest.woodstyles.Woodstyles;
 
 import java.util.ArrayList;
 import java.util.Map;

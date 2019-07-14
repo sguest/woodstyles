@@ -1,10 +1,12 @@
-package sguest.woodstyles;
+package sguest.woodstyles.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import sguest.woodstyles.WoodType;
+import sguest.woodstyles.Woodstyles;
 
 import java.util.HashMap;
 import java.util.Map;
